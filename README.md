@@ -50,5 +50,5 @@ I believe in engineering reliability, experimentation, and research-driven devel
 <p align="center">
 📌 Portfolio — <a href="https://anushkadev.vercel.app">anushkadev.vercel.app</a> •
 📂 GitHub — <a href="https://github.com/anuushka-dev">github.com/anuushka-dev</a> •
-🔗 LinkedIn — coming soon
+🔗 LinkedIn — <a href="https://www.linkedin.com/in/anushkadev/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8gx5gOygQsmfa9tAAjjUaA%3D%3D">anushka dev</a> •
 </p>
