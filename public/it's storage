@@ -1,0 +1,139 @@
+import { motion } from "framer-motion";
+import { Cpu, Mail, Github, Linkedin } from "lucide-react";
+import "./fade.css";
+import { useEffect, useState } from "react";
+
+export default function Home() {
+  // Scroll-triggered background fade
+  const [fade, setFade] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      const scrollY = window.scrollY;
+      const fadeValue = Math.min(scrollY / maxScroll, 1);
+      setFade(fadeValue);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div
+      className="w-full min-h-screen overflow-x-hidden scroll-smooth"
+      style={{ backgroundColor: `rgba(0,0,0,${fade * 0.6})` }}
+    >
+      {/* HERO SECTION */}
+      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-[#001F3F] relative">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col justify-center items-center text-white"
+        >
+          <Cpu className="w-24 h-24 mb-6" />
+
+          {/* MAIN TITLES */}
+          <h1 className="text-7xl font-extrabold leading-tight">
+            Machine Learning Engineer
+          </h1>
+          <h1 className="text-6xl font-bold mt-3">Full Stack Developer</h1>
+
+          {/* TAGLINE */}
+          <p className="text-3xl max-w-3xl opacity-90 mt-10">
+            I build Intelligent System and Tackle Real-World Problem
+          </p>
+        </motion.div>
+
+        {/* FADE BOTTOM EFFECT */}
+        <div className="fade-bottom"></div>
+      </section>
+
+      {/* PROJECTS SECTION */}
+      <section
+        id="projects"
+        className="py-24 px-10 text-center bg-[#7F8487] text-[#001F3F] relative"
+      >
+        <h2 className="text-5xl font-bold mb-16">Projects</h2>
+
+        <div className="grid md:grid-cols-3 gap-12">
+          {[
+            {
+              title: "Deepfake Image Detection",
+              desc: "CNN + ResNet based classifier identifying manipulated faces.",
+            },
+            {
+              title: "Sign Language Translator",
+              desc: "Real-time gesture recognition using Mediapipe + CNN.",
+            },
+            {
+              title: "Route Optimizer",
+              desc: "Graph algorithms for shortest path and optimized routing.",
+            },
+          ].map((p, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="p-8 rounded-3xl bg-[#6B728E] text-white shadow-2xl hover:scale-105 transition cursor-pointer"
+            >
+              <h3 className="text-3xl font-bold mb-4">{p.title}</h3>
+              <p className="opacity-90">{p.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* SKILLS SECTION */}
+      <section className="py-24 px-10 text-center bg-[#001F3F] text-white relative">
+        <h2 className="text-5xl font-bold mb-16">Skills</h2>
+
+        <div className="grid md:grid-cols-3 gap-10">
+          {["TensorFlow", "PyTorch", "Deep Learning", "CNN/RNN", "DSA", "React + Tailwind"].map(
+            (skill, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="py-6 rounded-2xl bg-[#6B728E] shadow-xl text-xl font-semibold"
+              >
+                {skill}
+              </motion.div>
+            )
+          )}
+        </div>
+      </section>
+
+      {/* CONTACT SECTION */}
+      <section className="py-20 px-10 text-center bg-[#7F8487] text-[#001F3F]">
+        <h2 className="text-5xl font-bold mb-10">Contact Me</h2>
+        <p className="opacity-80 mb-8 text-xl">
+          Let’s connect and build something amazing.
+        </p>
+
+        <div className="flex justify-center gap-12 text-3xl">
+          <motion.a whileHover={{ scale: 1.2 }} href="#">
+            <Mail />
+          </motion.a>
+          <motion.a whileHover={{ scale: 1.2 }} href="#">
+            <Github />
+          </motion.a>
+          <motion.a whileHover={{ scale: 1.2 }} href="#">
+            <Linkedin />
+          </motion.a>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="py-8 text-center text-sm opacity-70 bg-[#001F3F] text-white">
+        © 2025 Anushka Verma — ML Portfolio
+      </footer>
+
+      {/* GLOBAL FADE AFTER FOOTER */}
+      <div className="global-fade-bottom"></div>
+    </div>
+  );
+}
