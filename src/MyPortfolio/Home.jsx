@@ -90,6 +90,23 @@ export default function Home() {
       accent: "bg-fuchsia-500/10",
       tags: ["ResNet50", "TensorFlow", "Computer Vision", "ROC / PR"],
     },
+    {
+      title: "Mini-ERP CRM",
+      subtitle: "Full-Stack ERP & CRM Operations Portal",
+      description:
+        "Full-stack operations portal connecting customer CRM, product management, inventory, sales challans, backend RBAC, atomic stock transactions, PDF export, Docker, and CI.",
+      route: "/mini-erp-crm",
+      icon: <Database className="w-12 h-12 mb-5" />,
+      accent: "bg-cyan-500/10",
+      tags: [
+        "React",
+        "TypeScript",
+        "Express",
+        "PostgreSQL",
+        "Prisma",
+        "Docker",
+      ],
+    },
   ];
 
   const skills = [
@@ -128,7 +145,18 @@ export default function Home() {
   const techStack = [
     "Python",
     "TypeScript",
+    "JavaScript",
     "FastAPI",
+    "Node.js",
+    "Express",
+    "React",
+    "Vite",
+    "React Router",
+    "Axios",
+    "PostgreSQL",
+    "Prisma",
+    "JWT",
+    "Zod",
     "PyTorch",
     "TensorFlow",
     "XGBoost",
@@ -139,9 +167,10 @@ export default function Home() {
     "OSMnx",
     "Redis",
     "Docker",
+    "Docker Compose",
+    "Nginx",
+    "GitHub Actions",
     "Prometheus",
-    "React",
-    "Vite",
     "Tailwind CSS",
     "WebSockets",
     "Git",
@@ -517,13 +546,13 @@ export default function Home() {
             </h2>
 
             <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-[#727b96]">
-              Four projects across optimization, cybersecurity, multimodal
-              vision, and deepfake detection.
+              Projects across optimization, cybersecurity, multimodal vision,
+              deepfake detection, and full-stack business systems.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 mt-20 gap-8">
-            {projects.map((project, index) => (
+          <div className="mt-20 grid md:grid-cols-2 gap-8 items-stretch">
+            {projects.slice(0, 4).map((project, index) => (
               <Link to={project.route} key={project.title}>
                 <motion.div
                   initial={{ opacity: 0, y: 40 }}
@@ -534,7 +563,7 @@ export default function Home() {
                     delay: index * 0.08,
                   }}
                   whileHover={{ y: -10 }}
-                  className="p-8 min-h-[560px] h-full rounded-3xl bg-[#6B728E] text-[#0C1A2B] shadow-xl transition cursor-pointer flex flex-col justify-between"
+                  className="p-8 min-h-[500px] h-full rounded-3xl bg-[#6B728E] text-[#0C1A2B] shadow-xl transition cursor-pointer flex flex-col justify-between"
                 >
                   <div>
                     <div
@@ -590,6 +619,57 @@ export default function Home() {
               </Link>
             ))}
           </div>
+
+          {projects[4] && (
+            <div className="mt-8 max-w-4xl mx-auto">
+              <Link to={projects[4].route} className="block">
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.65, delay: 0.16 }}
+                  whileHover={{ y: -10 }}
+                  className="p-8 md:p-10 min-h-[380px] rounded-3xl bg-[#6B728E] text-[#0C1A2B] shadow-xl transition cursor-pointer flex flex-col md:flex-row md:items-center md:justify-between gap-8"
+                >
+                  <div className="flex-1">
+                    <div
+                      className={`w-16 h-16 rounded-2xl ${projects[4].accent} flex items-center justify-center mb-6`}
+                    >
+                      {projects[4].icon}
+                    </div>
+
+                    <p className="text-xs uppercase tracking-[0.18em] font-semibold opacity-60 mb-3">
+                      {projects[4].subtitle}
+                    </p>
+
+                    <h3 className="text-2xl md:text-4xl font-bold mb-4">
+                      {projects[4].title}
+                    </h3>
+
+                    <p className="opacity-90 text-base md:text-lg leading-7 max-w-3xl">
+                      {projects[4].description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mt-6">
+                      {projects[4].tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="px-2.5 py-1.5 rounded-lg bg-[#0C1A2B]/10 border border-[#0C1A2B]/10 text-xs font-semibold"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="shrink-0 flex items-center justify-center gap-2 px-7 py-4 bg-[#0C1A2B] text-[#98A1BC] rounded-xl font-semibold hover:bg-[#111a34] transition">
+                    <Database className="w-5 h-5" />
+                    View Project
+                  </div>
+                </motion.div>
+              </Link>
+            </div>
+          )}
         </div>
       </section>
 

@@ -6,6 +6,7 @@ import DeepfakeProjectPage from "./MyPortfolio/Deepfake-detection.jsx";
 import RouteOptimizerPage from "./MyPortfolio/route-optimizer.jsx";
 import SignLanguageTranslatorPage from "./MyPortfolio/Sign-language-translator.jsx";
 import NetworkIntrusionDetectionPage from "./MyPortfolio/NetworkIntrusionDetectionPage.jsx";
+import MiniERPProjectPage from "./MyPortfolio/MiniERPProjectPage.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           path="/network-intrusion-detection"
           element={<NetworkIntrusionDetectionPage />}
         />
+        <Route path="/mini-erp-crm" element={<MiniERPProjectPage />} />
       </Routes>
     </BrowserRouter>
   );
