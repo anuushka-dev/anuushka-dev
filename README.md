@@ -1,54 +1,158 @@
 <h1 align="center">Anushka</h1>
-<h3 align="center">Full-Stack Machine Learning Engineer</h3>
+
+<h3 align="center">Software Engineer | End-to-End Software & AI Systems</h3>
 
 <p align="center">
-Engineer focused on building practical AI systems with measurable real-world impact.
-Experienced in deep learning, computer vision, model optimization and deployment.
-I believe in engineering reliability, experimentation, and research-driven development.
+Building systems from idea to deployment across backend engineering, full-stack development,
+machine learning, computer vision, DevOps, and cloud infrastructure.
 </p>
+
+<p align="center">
+  <a href="https://anushkadev.vercel.app">Portfolio</a> •
+  <a href="https://www.linkedin.com/in/anushkadev/">LinkedIn</a> •
+  <a href="https://github.com/anuushka-dev">GitHub</a>
+</p>
+
+---
+
+## About
+
+I’m a Computer Science (AI/ML) student focused on building **end-to-end software and AI systems**.
+
+My work spans backend engineering, full-stack applications, machine learning, computer vision, algorithms, DevOps, and deployment. I enjoy working across the complete engineering lifecycle, from architecture and implementation to testing, containerization, deployment, observability, and reliability.
+
+I primarily work with **Python, FastAPI, TypeScript, PostgreSQL, Redis, Docker, PyTorch, XGBoost, React, and cloud infrastructure**.
+
+I’m particularly interested in systems where the software around the model matters just as much as the model itself: APIs, databases, caching, authentication, data pipelines, inference services, CI/CD, monitoring, and performance.
 
 ---
 
 ## Featured Work
-| Project | Description | Tech Used | Link |
-|--------|-------------|-----------|------|
-| **Deepfake Image Detection** | Detects AI-manipulated faces using Hybrid CNN + ResNet50 trained on 141K images | TensorFlow, ResNet50, CV, FP16 | https://anushkadev.vercel.app/deepfake |
-| **Sign Language Translator** | Real-time gesture-to-speech recognition for ASL using Mediapipe + TensorFlow | MediaPipe, WebML, React, TF | https://anushkadev.vercel.app/sign-language |
-| **Route Optimizer** | A* + Dijkstra-powered travel optimization system | Python, Algorithms, Graph Theory | https://anushkadev.vercel.app/route-optimizer |
+
+| Project                                | What I Built                                                                                                                                                                  | Technologies                                                                         |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **CityRoute**                          | End-to-end route optimization and dispatch platform using real road-network data, graph algorithms, optimization, caching, observability, and deployed backend infrastructure | Python, FastAPI, React, TypeScript, NetworkX, OSMnx, Redis, Docker, Prometheus, GCP  |
+| **Mini ERP CRM**                       | Full-stack business operations platform with inventory workflows, transactional database logic, authentication, role-based access, deployment, and CI/CD                      | React, TypeScript, Node.js, Express, PostgreSQL, Prisma, JWT, Docker, GitHub Actions |
+| **Network Intrusion Detection System** | Real-time ML-backed security pipeline covering traffic processing, feature extraction, inference, persistence, severity analysis, and alert delivery                          | Python, FastAPI, XGBoost, scikit-learn, Scapy, OpenCV                                |
+| **Sign Language Translator**           | Real-time computer vision and inference service combining visual and hand-skeleton features with a WebSocket backend                                                          | Python, PyTorch, OpenCV, MediaPipe, FastAPI, WebSockets                              |
+
+### Explore
+
+🔗 [CityRoute](https://github.com/anuushka-dev/CityRoute)
+🔗 [Mini ERP CRM](https://github.com/anuushka-dev/mini-erp-crm)
+🔗 [Sign Language Translator](https://github.com/anuushka-dev/Sign-Language-Translator)
 
 ---
 
 ## Technical Skills
-<p align="center">
-<b>Machine Learning:</b> TensorFlow, PyTorch, CNN, ResNet, Transformers, Model Optimization, CV Pipelines<br/>
-<b>Software / Deployment:</b> React, Node.js, Streamlit, WebSockets, Docker, Vercel, Linux + WSL2, Git<br/>
-<b>Core:</b> Python, Data Structures & Algorithms, Performance Engineering, System Design
-</p>
+
+### Software Engineering
+
+Python • TypeScript • JavaScript • SQL
+FastAPI • Node.js • Express.js • REST APIs • WebSockets
+
+### AI / Machine Learning
+
+PyTorch • XGBoost • scikit-learn • OpenCV
+CNNs • Computer Vision • Feature Engineering • Model Inference
+
+### Data & Backend
+
+PostgreSQL • Prisma • SQLite • Redis
+Authentication • Authorization • Data Pipelines • Caching
+
+### DevOps & Infrastructure
+
+Docker • Docker Compose • GitHub Actions • GCP
+Linux • Nginx • Prometheus • Render • Vercel
+
+### Algorithms & Systems
+
+A* • Bidirectional A* • Dijkstra
+VRP • 2-Opt • LNS • Hungarian Algorithm
+Distance Matrices • Route Optimization • Performance Engineering
 
 ---
 
-## Tools & Technologies
-<p align="center">
- <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
- <img src="https://img.shields.io/badge/PyTorch-ee4c2c?style=for-the-badge&logo=pytorch&logoColor=white"/>
- <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
- <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
- <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-</p>
+## Engineering Focus
+
+```text
+Architecture
+     ↓
+Implementation
+     ↓
+APIs / Algorithms / ML
+     ↓
+Testing & Validation
+     ↓
+Docker / CI/CD
+     ↓
+Deployment
+     ↓
+Monitoring & Observability
+     ↓
+Iteration & Optimization
+```
+
+I’m interested in engineering systems that work beyond the notebook or local development environment.
+
+---
+
+## Currently Interested In
+
+**Software Engineering**
+**Backend Engineering**
+**Full-Stack Development**
+**DevOps / Cloud Engineering**
+**ML Engineering**
+**AI Engineering**
+**Computer Vision**
+
+Open to **internships and full-time opportunities**.
 
 ---
 
 ## Engineering Statistics
+
 <p align="center">
- <img height="160em" src="https://github-readme-stats.vercel.app/api?username=anuushka-dev&show_icons=true&count_private=true&hide_border=true&theme=transparent"/>
- <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuushka-dev&layout=compact&hide_border=true&theme=transparent"/>
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=anuushka-dev&show_icons=true&count_private=true&hide_border=true&theme=transparent"/>
+  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuushka-dev&layout=compact&hide_border=true&theme=transparent"/>
+</p>
+
+---
+
+## Technologies
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/XGBoost-0F0F0F?style=for-the-badge&logo=xgboost&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white"/>
 </p>
 
 ---
 
 ## Connect
+
 <p align="center">
-📌 Portfolio — <a href="https://anushkadev.vercel.app">anushkadev.vercel.app</a> •
-📂 GitHub — <a href="https://github.com/anuushka-dev">github.com/anuushka-dev</a> •
-🔗 LinkedIn — <a href="https://www.linkedin.com/in/anushkadev/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8gx5gOygQsmfa9tAAjjUaA%3D%3D">anushka dev</a> •
+  📌 <a href="https://anushkadev.vercel.app">Portfolio</a> •
+  💻 <a href="https://github.com/anuushka-dev">GitHub</a> •
+  🔗 <a href="https://www.linkedin.com/in/anushkadev/">LinkedIn</a>
 </p>
+
