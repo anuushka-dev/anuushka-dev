@@ -1,136 +1,123 @@
 <h1 align="center">Anushka</h1>
 
-<h3 align="center">End-to-End Software & AI Engineer</h3>
+<h3 align="center">Software Engineer · Backend · Full-Stack · AI Systems</h3>
 
 <p align="center">
-Building complete systems from problem to production: backend, machine learning, computer vision,
-algorithms, data, infrastructure, deployment, and reliability.
+Building end-to-end systems across backend engineering, algorithms, AI/ML, and deployment.
 </p>
 
 <p align="center">
-  <a href="https://anushkadev.vercel.app">Portfolio</a> •
+  <a href="https://anuushka.dev.vercel.app">Portfolio</a> •
   <a href="https://www.linkedin.com/in/anushkadev/">LinkedIn</a> •
   <a href="https://github.com/anuushka-dev">GitHub</a>
 </p>
 
 ---
 
-## What I Build
+## Featured Projects
 
-I work on **end-to-end software and AI systems**, where the algorithm or model is only one part of the product.
+### 🚚 CityRoute · Route Optimization & Dispatch
 
-My projects move through the engineering lifecycle:
+**Python · FastAPI · OSMnx · NetworkX · Redis · Docker · Prometheus**
 
-```text
-Problem
-  ↓
-Architecture & Data
-  ↓
-Algorithms / ML / Backend
-  ↓
-APIs & Application Logic
-  ↓
-Testing & Validation
-  ↓
-Docker / CI
-  ↓
-Deployment
-  ↓
-Observability
-  ↓
-Performance & Reliability
-```
+Last-mile routing backend built on OpenStreetMap road-network data.
 
-I am especially interested in the engineering around intelligent systems: APIs, databases, caching, authentication, inference, deployment, monitoring, and performance.
+* Custom **A***, Bidirectional A*, Dijkstra, distance matrices, and BallTree GPS snapping
+* **Greedy VRP, 2-Opt, LNS**, and **Hungarian assignment**
+* Redis caching, bounded concurrency, readiness/liveness checks, and metrics
+* Benchmarking and correctness probes across routing and optimization stages
+
+**[GitHub](https://github.com/anuushka-dev/CityRoute)** · **[Live API](https://cityroute-demo.onrender.com)** · **[Swagger](https://cityroute-demo.onrender.com/docs)**
+
+> Current deployment boundary: the live dispatch endpoint currently uses haversine dispatch costs. Road-network source-Dijkstra dispatch is implemented at the service layer but is not yet wired into the live API.
 
 ---
 
-## Featured Work
+### 🏢 Mini-ERP CRM · Full-Stack Operations Platform
 
-| Project                                                                                                                                | End-to-end focus                                                                                                                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[CityRoute](https://github.com/anuushka-dev/CityRoute)**                                                                             | Delivery routing and dispatch backend using real road-network data, custom graph algorithms, VRP optimization, Redis caching, Docker, observability, testing, benchmarking, and deployment. |
-| **[Cyber Risk Detection & Physical Awareness System](https://github.com/anuushka-dev/Cyber-Risk-Detection-Physical-Awareness-System)** | Integrated ML system combining network intrusion detection, physical surveillance, inference services, context fusion, and alerting through FastAPI.                                        |
-| **[Mini-ERP CRM](https://github.com/anuushka-dev/mini-erp-crm)**                                                                       | Full-stack business platform with PostgreSQL, Prisma, authentication, backend-enforced RBAC, inventory workflows, transactional business logic, Docker, and GitHub Actions CI.              |
-| **Sign Language Translator**                                                                                                           | Real-time computer-vision inference system combining visual and hand-skeleton features with a WebSocket backend and interactive frontend.                                                   |
+**React · TypeScript · Node.js · Express · PostgreSQL · Prisma · JWT · Docker**
 
----
+Business platform covering CRM, inventory, stock movements, challans, role-based access, and PDF export.
 
-## Stack
+* Backend-enforced **JWT + RBAC**
+* Atomic challan confirmation and stock deduction in PostgreSQL transactions
+* Historical product snapshots preserve transaction integrity
+* Docker Compose deployment and GitHub Actions CI
 
-### Languages
-
-Python • TypeScript • JavaScript • SQL
-
-### Backend & APIs
-
-FastAPI • Node.js • Express.js • REST APIs • WebSockets
-
-### AI / ML
-
-PyTorch • XGBoost • scikit-learn • OpenCV • MediaPipe
-CNNs • Feature Engineering • Model Inference • Computer Vision
-
-### Data & Systems
-
-PostgreSQL • Prisma • Redis • SQLite
-Caching • Data Pipelines • Authentication • Authorization
-
-### Infrastructure & Development Environment
-
-Docker • Docker Compose • GitHub Actions • Linux • **WSL2**
-Nginx • Prometheus • GCP • Render • Vercel
-
-### Algorithms & Optimization
-
-A* • Bidirectional A* • Dijkstra
-VRP • 2-Opt • LNS • Hungarian Assignment
-Graph Routing • Distance Matrices • Performance Engineering
+**[GitHub](https://github.com/anuushka-dev/mini-erp-crm)** · **Live Frontend** · **Live Backend API**
 
 ---
 
-## Engineering Principles
+### 🛡️ Cyber Risk Detection & Physical Awareness
 
-I care about what happens **after the first working prototype**:
+**Python · FastAPI · XGBoost · OpenCV · scikit-learn**
 
-* explicit API and data boundaries
+Integrated security-monitoring system combining network intrusion detection with physical surveillance context.
+
+* Packet/flow processing → feature extraction → ML inference
+* Context fusion between cyber events and physical human presence
+* FastAPI inference endpoints, event persistence, logging, and alert delivery
+
+**[GitHub](https://github.com/anuushka-dev/Cyber-Risk-Detection-Physical-Awareness-System)**
+
+---
+
+### ✋ Sign Language Translator · Real-Time Multimodal CV
+
+**PyTorch · OpenCV · MediaPipe · FastAPI · WebSockets**
+
+Real-time ASL recognition using fused RGB and hand-skeleton features.
+
+* Temporal smoothing, debouncing, and prediction locking
+* WebSocket inference service with interactive client
+* TTS and optional Hindi translation
+
+**[GitHub](https://github.com/anuushka-dev/Sign-Language-Translator)**
+
+---
+
+## Engineering Focus
+
+**Backend & Systems**
+Python · FastAPI · Node.js · Express · REST APIs · WebSockets · PostgreSQL · Redis
+
+**AI / ML**
+PyTorch · XGBoost · scikit-learn · OpenCV · MediaPipe · Model Serving · Computer Vision
+
+**Cloud & Infrastructure**
+Docker · Docker Compose · GitHub Actions · GCP · Render · Vercel · Linux · Nginx · Prometheus
+
+**Algorithms & Optimization**
+A* · Bidirectional A* · Dijkstra · VRP · 2-Opt · LNS · Hungarian Algorithm · Distance Matrices
+
+**Languages**
+Python · TypeScript · JavaScript · SQL
+
+---
+
+## How I Engineer
+
+I focus on the layer beyond the first working prototype:
+
+* clear API and data boundaries
 * validation and failure handling
-* correct database state transitions
+* transactional correctness
 * caching and performance
 * automated testing
-* reproducible development environments
 * containerized deployment
-* observability
-* measurable optimization
-* honest production boundaries
-
-I prefer systems that can be inspected, tested, deployed, and improved rather than code that only works locally.
+* observability and benchmarking
+* explicit production boundaries
 
 ---
 
-## Current Direction
+## Currently Looking For
 
-**End-to-End Software & AI Engineering**
+**Software Engineering · Backend Engineering · Full-Stack · Applied AI/ML**
 
-I am interested in engineering roles where I can work across system design, backend development, ML/AI, infrastructure, and productionization rather than owning only one isolated layer.
-
-Open to **internships and full-time engineering opportunities**.
+Open to internships and full-time engineering opportunities.
 
 ---
-
-## Engineering Statistics
 
 <p align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=anuushka-dev&show_icons=true&count_private=true&hide_border=true&theme=transparent"/>
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuushka-dev&layout=compact&hide_border=true&theme=transparent"/>
-</p>
-
----
-
-## Connect
-
-<p align="center">
-  <a href="https://anushkadev.vercel.app">Portfolio</a> •
-  <a href="https://github.com/anuushka-dev">GitHub</a> •
-  <a href="https://www.linkedin.com/in/anushkadev/">LinkedIn</a>
+  <b>Portfolio:</b> <a href="https://anuushka.dev.vercel.app">anuushka.dev.vercel.app</a>
 </p>
