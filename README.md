@@ -44,7 +44,7 @@ Business platform covering CRM, inventory, stock movements, challans, role-based
 * Historical product snapshots preserve transaction integrity
 * Docker Compose deployment and GitHub Actions CI
 
-**[GitHub](https://github.com/anuushka-dev/mini-erp-crm)** · **Live Frontend** · **Live Backend API**
+**[GitHub](https://github.com/anuushka-dev/mini-erp-crm)** · **[Live Frontend](https://mini-erp-crm-flax.vercel.app/)** · **[Live Backend API](https://mini-erp-crm-backend-w1vm.onrender.com)**
 
 ---
 
